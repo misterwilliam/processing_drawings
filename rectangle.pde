@@ -1,15 +1,15 @@
-float framerate = 2;
+float framerate = 0.2;
 float golden_ratio = 1.618;
 
 void setup() {
-  size(750, 750);
+  size(750, 500);
   frameRate(framerate);
   noStroke();
 }
 
 int get_brightness(float i) {
-  int min_brightness = 60;
-  int max_brightness = 255;
+  int min_brightness = 150;
+  int max_brightness = 240;
   int num_shades = 10;
   int index = i + frameCount;
   int shade = (max_brightness - min_brightness) * sin(PI * index % num_shades / num_shades);

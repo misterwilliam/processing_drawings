@@ -3,8 +3,22 @@
 <head>
   <title>Hello Web - Processing.js Test</title>
   <script src="processing-1.3.6.js"></script>
+  <style type="text/css">
+    .shadow {
+      position: fixed;
+      left: 50%;
+      margin-left: -375px;
+      top: 100px;
+      -moz-box-shadow: 3px 3px 5px 6px #ccc;
+      -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+      box-shadow: 3px 3px 5px 6px #ccc;
+      width: 750px;
+    }
+  </style>
 </head>
 <body>
-  <canvas data-processing-sources="rectangle.pde"></canvas>
+  <div class="shadow">
+    <canvas data-processing-sources="rectangle.pde"></canvas>
+  </div>
 </body>
 </html>
